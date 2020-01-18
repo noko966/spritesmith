@@ -1,0 +1,19 @@
+{
+  "name": "spritegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp.spritesmith": "^6.11.0"
+  },
+  "dependencies": {
+    "require-dir": "^1.2.0",
+    "spritesheet-templates": "^10.4.2"
+  }
+}

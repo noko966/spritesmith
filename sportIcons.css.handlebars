@@ -1,0 +1,34 @@
+
+[class^='imgSpr'],
+[class*='imgSpr']{
+  overflow:hidden; text-indent:-999px;
+  background-image: url(../../images/sprites/sportIcons.png);
+  background-position:0 -680px;
+  background-size:100%;
+  width: 24px;
+  height: 24px;
+}
+
+.sportIcons2x [class^='imgSpr'],
+.sportIcons2x [class*='imgSpr']{
+  overflow:hidden; text-indent:-999px;
+  background-image: url(../../images/sprites/sportIcons.png);
+  background-position:0 -680px;
+  background-size:100%;
+  width: 60px;
+  height: 60px;
+}
+
+/*1x 20px*/
+{{#sprites}}
+.imgSpr{{_toInt name}} {
+  background-position: 0 -{{_toIntandMultByNum name 24}}px;
+}
+{{/sprites}}
+
+/*2x 40px*/
+{{#sprites}}
+.sportIcons2x .imgSpr{{_toInt name}} {
+  background-position: 0 -{{_toIntandMultByNum name 60}}px;
+}
+{{/sprites}}
